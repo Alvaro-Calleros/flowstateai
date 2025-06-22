@@ -1,7 +1,6 @@
 {
   "name": "flowstateai",
   "homepage": "https://Alvaro-Calleros.github.io/flowstateai/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

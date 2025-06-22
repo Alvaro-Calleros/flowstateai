@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { useTheme } from '@/hooks/use-theme';
@@ -12,12 +13,12 @@ const Navigation = () => {
       <div className="container mx-auto container-spacing">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div onClick={() => window.location.href = '/'} className="flex items-center">
-            <img src="/logo-flowstateai.png" alt="FlowStateAI Logo" className="h-8 w-auto mr-3" />
+          <Link to="/" className="flex items-center cursor-pointer">
+            <img src={`${import.meta.env.BASE_URL}logo-flowstateai.png`} alt="FlowStateAI Logo" className="h-8 w-auto mr-3" />
             <div  className="text-2xl font-bold text-foreground">
               FlowStateAI
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">

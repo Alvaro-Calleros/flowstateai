@@ -65,7 +65,7 @@ const HeroSection = () => {
           {/* Hero Visual */}
           <div className="relative mx-auto max-w-4xl animate-fade-in">
             <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
-              <img src="/ai-business.jpeg" alt="AI Business" className="w-full h-[340px] object-cover" />
+              <img src={`${import.meta.env.BASE_URL}ai-business.jpeg`} alt="AI Business" className="w-full h-[340px] object-cover" />
             </div>
             
             {/* Marketing Message */}
